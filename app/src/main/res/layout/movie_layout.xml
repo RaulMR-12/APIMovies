@@ -1,0 +1,54 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MovieCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#92169c">
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        tools:background="@color/black" />
+
+    <TextView
+        android:id="@+id/MovieName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/poster"
+        app:layout_constraintStart_toStartOf="@+id/poster"
+        app:layout_constraintTop_toBottomOf="@+id/poster"
+        tools:text="PreviewTitle" />
+
+    <TextView
+        android:id="@+id/MovieYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/poster"
+        app:layout_constraintStart_toStartOf="@+id/poster"
+        app:layout_constraintTop_toBottomOf="@+id/MovieName"
+        tools:text="PreviewScript"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
